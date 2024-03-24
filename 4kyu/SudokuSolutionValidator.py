@@ -19,4 +19,6 @@ def validSolution(board):
                 if not valid_set(board[i][j*3:(j+1)*3]+board[i+1][j*3:(j+1)*3]+board[i+2][j*3:(j+1)*3]):
                     return False
         if not valid_set([x[i] for x in board]): # Columns
-            return Fals
+            return False
+        
+    return True
